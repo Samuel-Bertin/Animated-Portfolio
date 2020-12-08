@@ -183,7 +183,7 @@ header {
         box-shadow: 0.7em 0.7em 0px #404870;
 
         .icon-container {
-            height: 200px;
+            height: 200px;  
             display:grid;
             place-content: center;
             margin : 0 auto;
@@ -251,7 +251,68 @@ footer {
     
 }
 
+@media only screen and (max-width: 460px) {
+    
+    header {
+        
+        a.logo {
+            font-size: 1.3em;
+        }
+        
+        ul {
+            
+            margin-left: 1em;
 
+            li a {
+                padding: 0.5em;
+            }
+        }
+    }
+
+    .hero .content {
+        
+        p { font-size: 1.62em;}
+
+        svg {
+            width: 40px;
+        }
+    
+        .content-title {
+            font-size: 2.62em;
+        }
+
+    }
+
+    section {
+        padding: 4em 2em;
+    }
+
+    .skills-container {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .featured::before {
+        content : "";
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background : rgba(124, 138, 213, 0.33);
+        left: 50%;
+        top: 7em;
+        z-index: -1;
+        transform: translateX(-50%)
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .skills-title {
+        font-size: 2.62em;
+    }
+
+}
 
 @media only screen and (min-width: 800px) {
     
@@ -313,6 +374,11 @@ footer {
     footer ul li { 
         margin: 2em;
     }
+
+    .skills img {
+        width: 60px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
